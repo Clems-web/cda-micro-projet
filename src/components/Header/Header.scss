@@ -1,0 +1,21 @@
+.Header {
+    width: 90%;
+    height: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .Navbar {
+        width: 60%;
+        height: fit-content;
+
+        ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            font-size: 3rem;
+            color: white;
+            list-style: none;
+        }
+    }
+}
