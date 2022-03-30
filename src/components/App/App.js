@@ -1,7 +1,6 @@
 import './App.scss';
 import {Header} from "../Header/Header";
 import {Plans} from "../Plans/Plans";
-import {useState} from "react";
 
 
 function App() {
@@ -12,13 +11,13 @@ function App() {
         {id: 2, title: 'BUSINESS', price: 24, order_number : 100}
     ];
 
-    const [plans, setPlans] = useState([...listPlans]);
-
 
 
   return (
     <div className="App">
+
       <Header />
+
       <div className='Presentation'>
           <h1>BEST CHATTING APP FOR BUSINESS</h1>
           <p>
@@ -28,7 +27,9 @@ function App() {
           </p>
           <button>LEARN MORE</button>
       </div>
+
       <div className='PricingList'>
+
           <h2>PRICING AND PLANS</h2>
           <p className='ShortDesc'>Risk free, 30 days trial period, 30-day money back guarantee, no hidden fees</p>
 
@@ -37,6 +38,7 @@ function App() {
           </div>
 
           <div className='EndPricingList'>
+
               <p className='ShortDesc'>Contact us if your online store is operating more than 100 orders per month</p>
 
               <p className='SpotRed'>30 DAYS FREE TRIAL</p>
@@ -46,6 +48,7 @@ function App() {
                   payment link inside product chat in application.
               </p>
               <button>SIGN IN</button>
+
           </div>
 
       </div>
